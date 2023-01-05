@@ -1,0 +1,11 @@
+# Pedimos a un usuario que elija una canción de una lista de 10 canciones. Cuando el usuario lo hace, imprime la letra de la canción que seleccionó.
+
+letras = {'De música ligera':['Soda Stereo','Ella durmió al calor de las masas\nY yo desperté queriendo soñarla\nAlgún tiempo atrás pensé en escribirle\nQue nunca sorteé las trampas del amor\nDe aquel amor\nDe música ligera\nNada nos libra\nNada más queda\nNo le enviaré cenizas de rosas\nNi pienso evitar un roce secreto\nDe aquel amor\nDe música ligera\nNada nos libra\nNada más queda\nDe aquel amor\nDe música ligera\nNada nos libra\nNada más queda\nNada más...\nNada más queda\nNada más queda\nNada más queda\nNada más queda'], 'Persiana americana':['Soda Stereo','Yo te prefiero\nFuera de foco\nInalcanzable\nYo te prefiero\nIrreversible\nCasi intocable\nTus ropas caen lentamente\nSoy un espía, un espectador\nY el ventilador desgarrándote\nSé que te excita pensar hasta dónde llegaré\nEs difícil de creer\nCreo que nunca lo podré saber\nSolo así yo te veré\nA través de mi persiana americana\nEs una condena agradable\nEl instante previo\nEs como un desgaste\nUna necesidad\nMás que un deseo\nEstamos al borde de la cornisa\nCasi a punto de caer\nNo sientes miedo\nSigues sonriendo\nSé que te excita pensar hasta dónde llegaré\nEs difícil de creer\nCreo que nunca lo podré saber\nSolo así yo te veré\nA través de mi persiana americana\nTus ropas caen lentamente\nSoy un espía, un espectador\nY el ventilador desgarrándote\nSé que te excita pensar hasta dónde llegaré\nEs difícil de creer\nCreo que nunca lo podré saber\nSolo así yo te veré\nA través de mi persiana americana\nLo que pueda suceder\nNo gastes fuerzas para comprender\nSolo así yo te veré\nA través de mi persiana americana\nDifícil de creer\nCreo que nunca lo podré saber\nSolo así yo te veré\nA través de mi persiana americana\nDifícil, difícil de creer\nCreo que nunca lo podré saber\nSolo así yo te veré\nA través de mi persiana americana']}
+
+print('Seleccione una de las siguientes canciones: ')
+for key in letras.keys():
+    print(key)
+cancion = input(f'Ingrese su elección: ')
+print(f'Has seleccionado "{cancion}" del artista "{letras[cancion][0]}". Te mostramos la letra a continuación:\n')
+print(f'{"-"*10}{cancion}{"-"*10}\n')
+print(letras[cancion][1])
